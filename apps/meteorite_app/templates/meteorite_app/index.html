@@ -16,7 +16,7 @@
     <div class="dataTable">
         <table class="table table-striped">
             <thead>
-                <tr>
+                <tr class="headerRow">
                     <th scope="col">Name</th>
                     <th scope="col">Id</th>
                     <th scope="col">Name Type</th>
@@ -29,11 +29,19 @@
                 </tr>
             </thead>
             <tbody>
+                {% for m in meteorites_data %}
                 <tr>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td>{{ m.name }}</td>
+                    <td>{{ m.id }}</td>
+                    <td>{{ m.nametype }}</td>
+                    <td>{{ m.recclass }}</td>
+                    <td>{{ m.mass }}</td>
+                    <td>{{ m.fall }}</td>
+                    <td>{{ m.year|date:'y' }}</td>
+                    <td>{{ m.geolocation.latitude }}</td>
+                    <td>{{ m.geolocation.longitude }}</td>
                 </tr>
+                {% endfor %}
             </tbody>
         </table>
     </div>
