@@ -14,12 +14,12 @@
         <h1>Meteorite Explorer</h1>
     </div>
     <div class="formBox">
-        <form id="search_form" class="ajax_form" action='search' method="post">
-            {% csrf_token %}
-            <input class="formField" type="text" name="name" placeholder="Enter search terms">
-            <input class="formButton" type="submit" value="SEARCH">
-        </form>
-    </div>
+            <form id="search_form" class="ajax_form" action='search' method="post">
+                {% csrf_token %}
+                <input class="formField" type="text" name="name" placeholder="Enter search terms">
+                <input class="formButton" type="submit" value="SEARCH">
+            </form>
+        </div>
     <div class="dataTable">
         <table class="table table-striped">
             <thead>
