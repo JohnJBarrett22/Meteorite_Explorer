@@ -37,7 +37,7 @@
                     <td>{{ m.recclass }}</td>
                     <td>{{ m.mass }}</td>
                     <td>{{ m.fall }}</td>
-                    <td>{{ m.year|date:'y' }}</td>
+                    <td>{{ m.year|slice:"0:4" }}</td>
                     <td>{{ m.geolocation.latitude }}</td>
                     <td>{{ m.geolocation.longitude }}</td>
                 </tr>
