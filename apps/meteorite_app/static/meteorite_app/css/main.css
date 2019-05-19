@@ -11,9 +11,30 @@ body {
     color: white;
     background-color: #3f51b5
 }
+.formBox {
+    width: 20rem;
+    margin: 1.5rem auto;
+    padding: .5rem;
+    background-color: white;
+}
+.formField {
+    width: 12rem;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+.formButton {
+    margin: .25rem;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: .25rem;
+    font-weight: bold;
+    color: black;
+    background-color: #7986cb;
+}
 .dataTable {
     width: 90%;
-    margin: 3rem auto;
+    margin: 0 auto;
     background-color: white;
 }
 .headerRow {

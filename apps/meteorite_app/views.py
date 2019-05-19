@@ -9,3 +9,4 @@ def index(request):
     context = {'meteorites_data' : r}
 
     return render(request, "meteorite_app/index.html", context)
+
