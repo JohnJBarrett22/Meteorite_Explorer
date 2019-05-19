@@ -11,3 +11,8 @@ body {
     color: white;
     background-color: #3f51b5
 }
+.dataTable {
+    width: 90%;
+    margin: 3rem auto;
+    background-color: white;
+}
