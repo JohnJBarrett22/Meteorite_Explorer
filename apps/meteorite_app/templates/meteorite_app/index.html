@@ -17,20 +17,20 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-5"></div>
-            <div class="formBox col-2">
+            <div class="col-1 col-lg-4"></div>
+            <div class="formBox col-10 col-lg-3">
                 <form id="search_form" class="ajax_form" action='search' method="post">
                     {% csrf_token %}
                     <input class="formField" type="text" name="name" placeholder="Enter search terms">
                     <input class="formButton" type="submit" value="SEARCH">
                 </form>
             </div>
-            <div class="col-5"></div>
+            <div class="col-1 col-lg-4"></div>
         </div>
         <div class="row no-gutters">
             <div class="col-1"></div>
             <div class="dataTable col-10">
-                <table class="table table-hover table-striped">
+                <table class="table table-hover table-striped table-responsive-lg">
                     <thead>
                         <tr class="headerRow">
                             <th scope="col">Name</th>
