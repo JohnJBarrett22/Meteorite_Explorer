@@ -21,7 +21,7 @@ def search(request):
         context = {'meteorites_data' : r}
         return render(request, "meteorite_app/index.html", context)
     
-    url = 'https://data.nasa.gov/resource/gh4g-9sfh.json?name={}'.format(name)
+    url = 'https://data.nasa.gov/resource/gh4g-9sfh.json?$where=lower(name)%20like%20lower(%22%25Aa%25%22)'
     r = requests.get(url).json()
     context = {'meteorites_data' : r}
 
