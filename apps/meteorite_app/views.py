@@ -11,6 +11,9 @@ def index(request):
 
 def search(request):
     name = request.POST['name']
+    name = name.lower()
+    name = name.title()
+    print(name)
 
     if name == '':
         url = 'https://data.nasa.gov/resource/gh4g-9sfh.json'
